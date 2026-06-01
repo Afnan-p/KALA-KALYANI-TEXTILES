@@ -121,12 +121,7 @@ const Hero = () => {
               </div>
             </div>
             
-            {/* Floating Ornamental Badges */}
-            <motion.div animate={{ y: [0, 8, 0] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="absolute -right-6 top-12 bg-black/80 backdrop-blur-md border border-gold/40 p-4 shadow-xl">
-              <div className="text-gold font-playfair text-xl italic mb-1">Authentic</div>
-              <div className="text-cream/70 text-[0.55rem] font-poppins uppercase tracking-[0.2em]">Kerala Weaves</div>
-            </motion.div>
-            
+
           </motion.div>
         </motion.div>
       </div>
