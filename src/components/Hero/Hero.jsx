@@ -99,18 +99,16 @@ const Hero = () => {
           <div className="absolute -inset-4 bg-gold/20 blur-2xl rounded-full opacity-30 mix-blend-screen animate-pulse"></div>
           
           <motion.div 
-            whileHover={{ y: -12, rotateY: -6 }} 
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             className="w-full lg:w-[90%] xl:w-[85%] mx-auto relative aspect-[3/4] p-2 bg-black/40 backdrop-blur-xl border border-gold/30 shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
             style={{ perspective: 1000, scale: 1.05 }}
           >
             <div className="absolute inset-0 border border-gold/10 m-3 pointer-events-none z-20"></div>
             
-            <div className="w-full h-full relative overflow-hidden group">
+            <div className="w-full h-full relative overflow-hidden">
               <img 
                 src="/hero-card.png" 
                 alt="Premium Kerala Saree Bridal Collection" 
-                className="w-full h-full object-cover transform scale-105 group-hover:scale-110 transition-transform duration-1000 ease-out"
+                className="w-full h-full object-cover transform scale-105"
                 loading="eager"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/90 via-maroon-deep/20 to-transparent"></div>
