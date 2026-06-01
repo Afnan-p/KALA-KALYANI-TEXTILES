@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --maroon: #5A0B0B;
+  --maroon-deep: #3B0606;
+  --gold: #D4AF37;
+  --cream: #F7F1E8;
+  --charcoal: #1A1210;
+  --white: #FFFFFF;
+  --glass: rgba(255,255,255,0.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  color: var(--charcoal);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--cream); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+@layer components {
+  .hero-bg { 
+    background: linear-gradient(135deg, rgba(61, 7, 7, 0.8) 0%, rgba(90, 11, 11, 0.6) 50%, rgba(26, 5, 5, 0.8) 100%), url('/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  .woven-pattern { 
+    background-image: repeating-linear-gradient(45deg, rgba(212,175,55,0.1) 0, rgba(212,175,55,0.1) 2px, transparent 2px, transparent 10px); 
+  }
+  .glass-card { 
+    background: rgba(255,255,255,0.06); 
+    backdrop-filter: blur(10px); 
+    border: 1px solid rgba(212,175,55,0.25); 
+  }
+  
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: '';
+    position: absolute; width: 0; height: 1px; bottom: -2px; left: 0;
+    background-color: var(--gold); transition: width 0.3s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+}
