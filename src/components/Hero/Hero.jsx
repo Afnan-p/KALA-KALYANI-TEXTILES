@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen md:min-h-[92vh] lg:min-h-[95vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-0 overflow-hidden">
+    <section id="home" className="relative min-h-[100dvh] md:min-h-[92vh] lg:min-h-[95vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-0 overflow-hidden">
       {/* Background Image & Overlays */}
       <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-cover bg-center md:bg-fixed transform scale-105 md:motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
@@ -96,7 +96,7 @@ const Hero = () => {
 
         {/* Right Content - Luxury Showcase Panel */}
         <motion.div variants={scaleIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="md:col-span-5 lg:col-span-6 relative mt-12 md:mt-0 block">
-          <div className="absolute -inset-4 bg-gold/20 blur-2xl rounded-full opacity-30 mix-blend-screen animate-pulse"></div>
+          <div className="absolute -inset-4 bg-gold/20 blur-2xl rounded-full opacity-30 mix-blend-screen md:animate-pulse"></div>
           
           <motion.div 
             className="w-full lg:w-[90%] xl:w-[85%] mx-auto relative aspect-[3/4] p-2 bg-black/40 backdrop-blur-xl border border-gold/30 shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
