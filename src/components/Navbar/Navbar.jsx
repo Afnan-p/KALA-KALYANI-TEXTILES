@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className={`fixed w-full z-[100] top-0 transition-all duration-500 ${scrolled ? 'bg-black/30 backdrop-blur-xl border-b border-gold/20 py-3 shadow-2xl' : 'bg-gradient-to-b from-black/50 to-transparent pt-3 pb-4'}`}>
       <div className="max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 w-full flex justify-between items-center">
         <a href="#" className="flex items-center group z-50 cursor-pointer">
-          <img src="/logo.webp" alt="Kala Kalyani Logo" className="h-16 md:h-20 w-auto group-hover:scale-105 transition-transform duration-300 -mr-2 md:-mr-4" />
+          <img src="/logo.webp" alt="Kala Kalyani Logo" width="80" height="80" className="h-16 md:h-20 w-auto group-hover:scale-105 transition-transform duration-300 -mr-2 md:-mr-4" />
           <div className="flex flex-col items-center justify-center pt-1">
             <span className="font-playfair font-bold text-xl md:text-2xl tracking-widest text-cream drop-shadow-md group-hover:text-gold transition-colors duration-500 mb-[2px]">KALA KALYANI</span>
             <div className="flex items-center gap-2 w-full justify-center">

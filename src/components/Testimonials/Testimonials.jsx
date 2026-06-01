@@ -87,6 +87,8 @@ const Testimonials = () => {
                           alt={r.name} 
                           className="w-14 h-14 rounded-full object-cover border-2 border-gold/50 group-hover:border-gold shadow-md shrink-0 transition-colors duration-300"
                           loading="lazy"
+                          width="150"
+                          height="150"
                         />
                         <div className="absolute -bottom-1 -right-1 bg-gold text-maroon-deep rounded-full p-1 shadow-md">
                           <BadgeCheck size={12} strokeWidth={3} />

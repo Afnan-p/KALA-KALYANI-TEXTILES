@@ -20,21 +20,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.08)_0%,transparent_70%)]"></div>
       <div className="absolute inset-0 woven-pattern opacity-10 mix-blend-overlay"></div>
       
-      {/* Floating Gold Particles - Hidden on mobile for performance */}
-      {particles.map((_, i) => (
-        <motion.div
-          key={i}
-          className="absolute rounded-full bg-gold/40 blur-[1px] hidden md:block"
-          style={{ 
-            left: `${Math.random() * 100}%`, 
-            top: `${Math.random() * 100}%`,
-            width: `${Math.random() * 4 + 1}px`,
-            height: `${Math.random() * 4 + 1}px`
-          }}
-          animate={{ y: [0, -60, 0], opacity: [0.1, 0.8, 0.1], scale: [1, 1.5, 1] }}
-          transition={{ duration: 8 + Math.random() * 15, repeat: Infinity, delay: Math.random() * 5, ease: "easeInOut" }}
-        />
-      ))}
+      {/* Floating Gold Particles removed for performance */}
 
       <div className="max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 w-full relative z-10 grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
         
@@ -111,6 +97,8 @@ const Hero = () => {
                 className="w-full h-full object-cover transform scale-105"
                 loading="eager"
                 fetchPriority="high"
+                width="600"
+                height="800"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/90 via-maroon-deep/20 to-transparent"></div>
               
@@ -129,7 +117,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-3 hidden lg:flex">
         <span className="text-gold/70 font-poppins text-[0.55rem] tracking-[0.3em] uppercase">Discover</span>
-        <motion.div className="w-[1px] bg-gradient-to-b from-gold to-transparent" animate={{ height: [0, 50, 0], opacity: [0, 1, 0] }} transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }} />
+        <div className="w-[1px] h-12 bg-gradient-to-b from-gold to-transparent opacity-70" />
       </div>
     </section>
   );

@@ -35,6 +35,8 @@ const Collections = () => {
                 alt={item.title} 
                 className="w-full h-full object-cover" 
                 loading="lazy"
+                width="400"
+                height="600"
               />
               
               {/* Gold overlay gradient */}

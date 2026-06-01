@@ -36,6 +36,8 @@ const Gallery = () => {
                 alt={img.title} 
                 className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-[1.5s] ease-out opacity-90 group-hover:opacity-100" 
                 loading="lazy"
+                width="600"
+                height="600"
               />
 
               {/* Dark Luxury Overlay */}

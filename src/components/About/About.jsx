@@ -13,6 +13,8 @@ const About = () => {
                 alt="Kala Kalyani Heritage" 
                 className="absolute top-0 left-0 w-full h-full object-cover object-center scale-105 hover:scale-110 transition-transform duration-700" 
                 loading="lazy"
+                width="800"
+                height="1200"
               />
               <div className="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none"></div>
             </div>

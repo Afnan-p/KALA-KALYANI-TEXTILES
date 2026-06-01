@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Brand Info Column */}
           <div className="lg:pr-6">
             <a href="#home" className="flex items-center gap-4 mb-6 group inline-flex">
-              <img src="/logo.png" alt="Kala Kalyani Logo" className="h-16 w-auto" />
+              <img src="/logo.webp" alt="Kala Kalyani Logo" width="80" height="80" className="h-16 w-auto" />
               <div className="flex flex-col items-start">
                 <span className="font-playfair font-bold text-2xl tracking-widest text-gold drop-shadow-md group-hover:drop-shadow-[0_0_10px_rgba(212,175,55,0.5)] transition-all duration-300">KALA KALYANI</span>
                 <span className="text-[0.6rem] font-poppins tracking-[0.4em] text-cream/70 uppercase mt-1 group-hover:text-gold transition-colors duration-300">Textiles</span>
