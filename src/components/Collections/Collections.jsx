@@ -24,8 +24,8 @@ const Collections = () => {
               key={i} 
               variants={fadeUp}
               whileHover="hover"
-              className="group relative overflow-hidden cursor-pointer rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform-gpu transition-all duration-700 hover:shadow-[0_20px_60px_rgba(212,175,55,0.15)]"
-              style={{ height: '420px' }}
+              className="group relative overflow-hidden isolate z-0 cursor-pointer rounded-[20px] shadow-[0_20px_50px_rgba(0,0,0,0.5)] transform-gpu transition-all duration-700 hover:shadow-[0_20px_60px_rgba(212,175,55,0.15)]"
+              style={{ height: '420px', WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
             >
               {/* Full background image */}
               <motion.img 

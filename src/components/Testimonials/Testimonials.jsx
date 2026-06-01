@@ -56,10 +56,10 @@ const Testimonials = () => {
             {reviews.map((r, i) => (
               <SwiperSlide key={i}>
                 <div>
-                  <div className="bg-charcoal rounded-[24px] overflow-hidden p-8 md:p-12 h-[360px] flex flex-col relative transition-all duration-500 ease-out group hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)] border border-gold/10 hover:border-gold/50 cursor-grab active:cursor-grabbing">
+                  <div className="bg-charcoal rounded-[24px] overflow-hidden p-8 md:p-12 h-[360px] flex flex-col relative transition-all duration-500 ease-out group hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)] border border-gold/10 hover:border-gold/50 cursor-grab active:cursor-grabbing transform-gpu">
                     
                     {/* Oversized Quote Icon Background */}
-                    <div className="absolute -top-4 -right-4 text-gold/5 transform group-hover:scale-110 group-hover:text-gold/15 transition-all duration-700 pointer-events-none">
+                    <div className="absolute -top-4 -right-4 text-gold/5 transform group-hover:text-gold/15 transition-all duration-700 pointer-events-none">
                       <Quote size={140} strokeWidth={0.5} />
                     </div>
 

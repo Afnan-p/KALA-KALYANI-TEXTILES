@@ -47,4 +47,22 @@ body {
     background-color: var(--gold); transition: width 0.3s ease;
   }
   .nav-link:hover::after { width: 100%; }
+  
+  @keyframes textRevealCSS {
+    0% { opacity: 0; transform: translateY(100px) rotateX(-20deg); }
+    100% { opacity: 1; transform: translateY(0) rotateX(0); }
+  }
+  .animate-text-reveal { animation: textRevealCSS 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+  
+  @keyframes fadeUpCSS {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fadeUpCSS 0.8s ease-out forwards; opacity: 0; }
+  
+  @keyframes scaleInCSS {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  .animate-scale-in { animation: scaleInCSS 0.8s ease-out forwards; opacity: 0; }
 }

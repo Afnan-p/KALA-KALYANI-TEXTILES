@@ -29,7 +29,8 @@ const Gallery = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: (i % 3) * 0.15 }}
-              className={`relative overflow-hidden break-inside-avoid w-full ${img.aspect} cursor-pointer group rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)] transition-all duration-700 bg-charcoal`}
+              className={`relative overflow-hidden isolate z-0 break-inside-avoid w-full ${img.aspect} cursor-pointer group rounded-2xl shadow-[0_15px_40px_rgba(0,0,0,0.06)] hover:shadow-[0_20px_50px_rgba(212,175,55,0.15)] transition-all duration-700 bg-charcoal`}
+              style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
             >
               <img 
                 src={img.src} 

@@ -25,29 +25,29 @@ const Hero = () => {
       <div className="max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 w-full relative z-10 grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
         
         {/* Left Content */}
-        <motion.div className="md:col-span-7 lg:col-span-6 -mt-8 md:-mt-16 lg:-mt-24 flex flex-col items-center md:items-start text-center md:text-left" variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true }}>
+        <div className="md:col-span-7 lg:col-span-6 -mt-8 md:-mt-16 lg:-mt-24 flex flex-col items-center md:items-start text-center md:text-left">
           
-          <motion.div variants={fadeUp} className="inline-flex items-center gap-2 border border-gold/30 bg-black/40 backdrop-blur-md px-5 py-2 rounded-none mb-6 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
+          <div className="animate-fade-up inline-flex items-center gap-2 border border-gold/30 bg-black/40 backdrop-blur-md px-5 py-2 rounded-none mb-6 shadow-[0_0_15px_rgba(212,175,55,0.1)]">
             <Star size={12} className="text-gold fill-gold" />
             <span className="text-gold text-[0.65rem] font-poppins tracking-[0.4em] uppercase">Trusted Kerala Textile Brand</span>
-          </motion.div>
+          </div>
           
           <div className="overflow-hidden mb-1">
-            <motion.h1 variants={textReveal} className="text-[2.75rem] leading-[1.1] sm:text-5xl md:text-7xl lg:text-[5.5rem] text-cream font-playfair tracking-tight">
+            <h1 className="animate-text-reveal text-[2.75rem] leading-[1.1] sm:text-5xl md:text-7xl lg:text-[5.5rem] text-cream font-playfair tracking-tight">
               Where Tradition
-            </motion.h1>
+            </h1>
           </div>
           <div className="overflow-hidden mb-5">
-            <motion.h1 variants={textReveal} className="text-[2.75rem] leading-[1.1] sm:text-5xl md:text-7xl lg:text-[5.5rem] text-gold font-playfair italic pr-0 md:pr-4">
+            <h1 className="animate-text-reveal text-[2.75rem] leading-[1.1] sm:text-5xl md:text-7xl lg:text-[5.5rem] text-gold font-playfair italic pr-0 md:pr-4" style={{ animationDelay: '0.1s' }}>
               Meets Trend.
-            </motion.h1>
+            </h1>
           </div>
           
-          <motion.p variants={fadeUp} className="text-cream/70 font-poppins text-sm sm:text-base md:text-lg max-w-lg leading-[1.8] mb-8 tracking-wide font-light mx-auto md:mx-0">
+          <p className="animate-fade-up text-cream/70 font-poppins text-sm sm:text-base md:text-lg max-w-lg leading-[1.8] mb-8 tracking-wide font-light mx-auto md:mx-0" style={{ animationDelay: '0.2s' }}>
             Premium Collections for Men, Women & Kids in the Heart of Kochi. Experience the epitome of luxury ethnic fashion.
-          </motion.p>
+          </p>
           
-          <motion.div variants={fadeUp} className="flex flex-col sm:flex-row gap-4 mb-10 w-full sm:w-auto px-4 sm:px-0">
+          <div className="animate-fade-up flex flex-col sm:flex-row gap-4 mb-10 w-full sm:w-auto px-4 sm:px-0" style={{ animationDelay: '0.3s' }}>
             <a href="#collections" className="w-full sm:w-auto group relative overflow-hidden bg-gold text-maroon-deep font-poppins text-xs font-semibold tracking-[0.25em] uppercase px-8 py-5 transition-all duration-300 hover:shadow-[0_0_30px_rgba(212,175,55,0.5)] text-center">
               <span className="relative z-10">Explore Collections</span>
               <div className="absolute inset-0 bg-cream/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out"></div>
@@ -55,10 +55,10 @@ const Hero = () => {
             <a href="#contact" className="w-full sm:w-auto group border border-cream/30 bg-cream/5 backdrop-blur-sm text-cream font-poppins text-xs font-medium tracking-[0.25em] uppercase px-8 py-5 hover:bg-cream/10 hover:border-gold/50 transition-all duration-300 text-center">
               Contact Us
             </a>
-          </motion.div>
+          </div>
           
           {/* Luxury Trust Badges */}
-          <motion.div variants={fadeUp} className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-10 pt-8 border-t border-gold/20 w-full">
+          <div className="animate-fade-up flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-10 pt-8 border-t border-gold/20 w-full" style={{ animationDelay: '0.4s' }}>
             <div className="flex items-center gap-3">
               <div className="flex -space-x-1">
                 {[...Array(5)].map((_, i) => <Star key={i} size={14} className="text-gold fill-gold drop-shadow-md" />)}
@@ -77,14 +77,14 @@ const Hero = () => {
               <MapPin size={16} className="text-gold" />
               <span>Edappally, Kochi</span>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
 
         {/* Right Content - Luxury Showcase Panel */}
-        <motion.div variants={scaleIn} initial="hidden" whileInView="visible" viewport={{ once: true }} className="md:col-span-5 lg:col-span-6 relative mt-12 md:mt-0 block">
+        <div className="animate-scale-in md:col-span-5 lg:col-span-6 relative mt-12 md:mt-0 block" style={{ animationDelay: '0.2s' }}>
           <div className="absolute -inset-4 bg-gold/20 blur-2xl rounded-full opacity-30 mix-blend-screen md:animate-pulse"></div>
           
-          <motion.div 
+          <div 
             className="w-full lg:w-[90%] xl:w-[85%] mx-auto relative aspect-[3/4] p-2 bg-black/40 backdrop-blur-xl border border-gold/30 shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
             style={{ perspective: 1000, scale: 1.05 }}
           >
@@ -110,8 +110,8 @@ const Hero = () => {
             </div>
             
 
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </div>
       
       {/* Scroll Indicator */}
