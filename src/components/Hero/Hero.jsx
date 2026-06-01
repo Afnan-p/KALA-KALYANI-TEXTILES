@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen md:min-h-[92vh] lg:min-h-[95vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-0 overflow-hidden">
       {/* Background Image & Overlays */}
-      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center md:bg-fixed transform scale-105 md:motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]"></div>
+      <div className="absolute inset-0 bg-[url('/hero-bg.webp')] bg-cover bg-center md:bg-fixed transform scale-105 md:motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.08)_0%,transparent_70%)]"></div>
       <div className="absolute inset-0 woven-pattern opacity-10 mix-blend-overlay"></div>
@@ -106,10 +106,11 @@ const Hero = () => {
             
             <div className="w-full h-full relative overflow-hidden">
               <img 
-                src="/hero-card.png" 
+                src="/hero-card.webp" 
                 alt="Premium Kerala Saree Bridal Collection" 
                 className="w-full h-full object-cover transform scale-105"
                 loading="eager"
+                fetchPriority="high"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep/90 via-maroon-deep/20 to-transparent"></div>
               

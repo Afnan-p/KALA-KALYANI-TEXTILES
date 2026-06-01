@@ -9,7 +9,7 @@ const About = () => {
           <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative h-[400px] sm:h-[500px] md:h-[600px] w-full">
             <div className="absolute inset-0 border border-gold/30 overflow-hidden shadow-2xl bg-maroon-deep">
               <img 
-                src="/about-bg.jpg" 
+                src="/about-bg.webp" 
                 alt="Kala Kalyani Heritage" 
                 className="absolute top-0 left-0 w-full h-full object-cover object-center scale-105 hover:scale-110 transition-transform duration-700" 
                 loading="lazy"
