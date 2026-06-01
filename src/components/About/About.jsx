@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="bg-cream py-28 overflow-hidden">
       <div className="max-w-[1400px] 2xl:max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 grid md:grid-cols-2 gap-16 items-center">
-          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative h-[600px]">
+          <motion.div variants={fadeLeft} initial="hidden" whileInView="visible" viewport={{ once: true }} className="relative h-[400px] sm:h-[500px] md:h-[600px] w-full">
             <div className="absolute inset-0 border border-gold/30 overflow-hidden shadow-2xl bg-maroon-deep">
               <img 
                 src="/about-bg.jpg" 
@@ -16,8 +16,8 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-black/10 mix-blend-overlay pointer-events-none"></div>
             </div>
-            <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 4, repeat: Infinity }} className="absolute -bottom-8 -right-8 glass-card bg-maroon-deep/90 p-6 backdrop-blur-xl border border-gold/40 max-w-[200px] z-10 shadow-2xl">
-              <div className="font-poppins text-xs text-gold uppercase tracking-widest text-center leading-relaxed drop-shadow-md">Est. <br/> Edappally,<br/> Kochi</div>
+            <motion.div animate={{ y: [0, -10, 0] }} transition={{ duration: 4, repeat: Infinity }} className="absolute bottom-4 right-4 md:-bottom-8 md:-right-8 glass-card bg-maroon-deep/90 p-4 md:p-6 backdrop-blur-xl border border-gold/40 max-w-[160px] md:max-w-[200px] z-10 shadow-2xl">
+              <div className="font-poppins text-[0.65rem] md:text-xs text-gold uppercase tracking-widest text-center leading-relaxed drop-shadow-md">Est. <br/> Edappally,<br/> Kochi</div>
             </motion.div>
         </motion.div>
         <motion.div variants={fadeRight} initial="hidden" whileInView="visible" viewport={{ once: true }}>

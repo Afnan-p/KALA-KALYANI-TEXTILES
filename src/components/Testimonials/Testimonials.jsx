@@ -25,7 +25,7 @@ const Testimonials = () => {
 
         {/* Trust Strip Removed */}
 
-        <div className="pb-20 relative px-2 md:px-16">
+        <div className="relative px-2 md:px-16">
           {/* Custom Navigation Arrows */}
           <button className="swiper-prev-btn absolute left-0 top-1/2 -translate-y-1/2 z-30 w-14 h-14 rounded-full border-2 border-gold/40 bg-cream/90 backdrop-blur-md flex items-center justify-center text-gold hover:bg-gold hover:text-maroon-deep transition-all duration-300 hidden md:flex cursor-pointer hover:scale-110 shadow-[0_10px_30px_rgba(212,175,55,0.2)]">
             <ChevronLeft size={28} strokeWidth={1.5} className="ml-[-2px]" />
@@ -51,7 +51,7 @@ const Testimonials = () => {
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 }
             }}
-            className="!pb-20 pt-10"
+            className="!pb-12 pt-10"
           >
             {reviews.map((r, i) => (
               <SwiperSlide key={i}>
