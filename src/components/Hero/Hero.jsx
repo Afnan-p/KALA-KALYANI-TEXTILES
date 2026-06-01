@@ -15,16 +15,16 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen md:min-h-[92vh] lg:min-h-[95vh] flex items-center pt-32 pb-20 md:pt-24 md:pb-0 overflow-hidden">
       {/* Background Image & Overlays */}
-      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-fixed transform scale-105 motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]"></div>
+      <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center md:bg-fixed transform scale-105 md:motion-safe:animate-[pulse_20s_ease-in-out_infinite_alternate]"></div>
       <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/60 to-black/30"></div>
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.08)_0%,transparent_70%)]"></div>
       <div className="absolute inset-0 woven-pattern opacity-10 mix-blend-overlay"></div>
       
-      {/* Floating Gold Particles */}
+      {/* Floating Gold Particles - Hidden on mobile for performance */}
       {particles.map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full bg-gold/40 blur-[1px]"
+          className="absolute rounded-full bg-gold/40 blur-[1px] hidden md:block"
           style={{ 
             left: `${Math.random() * 100}%`, 
             top: `${Math.random() * 100}%`,
@@ -99,8 +99,10 @@ const Hero = () => {
           <div className="absolute -inset-4 bg-gold/20 blur-2xl rounded-full opacity-30 mix-blend-screen animate-pulse"></div>
           
           <motion.div 
-            whileHover={{ y: -10, rotateY: -5 }} 
-            className="w-full lg:w-[90%] xl:w-[85%] mx-auto relative aspect-[3/4] p-2 bg-black/40 backdrop-blur-xl border border-gold/30 shadow-[0_30px_60px_rgba(0,0,0,0.6)] transform perspective-1000 scale-105"
+            whileHover={{ y: -12, rotateY: -6 }} 
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            className="w-full lg:w-[90%] xl:w-[85%] mx-auto relative aspect-[3/4] p-2 bg-black/40 backdrop-blur-xl border border-gold/30 shadow-[0_30px_60px_rgba(0,0,0,0.6)]"
+            style={{ perspective: 1000, scale: 1.05 }}
           >
             <div className="absolute inset-0 border border-gold/10 m-3 pointer-events-none z-20"></div>
             
